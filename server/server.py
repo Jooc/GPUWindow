@@ -16,6 +16,7 @@ def watch_cpu_and_send(sock, addr):
     while True:
         time.sleep(1)
         sock.send(('Hello, this is the %sth message!' % counter).encode('utf-8'))
+        print("message sent...")
         counter += 1
 
 

@@ -10,7 +10,7 @@ import SwiftUI
 
 
 @main
-struct GPUWindowApp: App {    
+struct GPUWindowApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

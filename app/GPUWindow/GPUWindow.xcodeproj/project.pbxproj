@@ -7,44 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F11341C227EAB9FC00E3F9E9 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = F11341C127EAB9FC00E3F9E9 /* NIO */; };
-		F11341C427EAB9FC00E3F9E9 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = F11341C327EAB9FC00E3F9E9 /* NIOConcurrencyHelpers */; };
-		F11341C627EAB9FC00E3F9E9 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = F11341C527EAB9FC00E3F9E9 /* NIOCore */; };
-		F11341C827EAB9FC00E3F9E9 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = F11341C727EAB9FC00E3F9E9 /* NIOEmbedded */; };
-		F11341CA27EAB9FC00E3F9E9 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = F11341C927EAB9FC00E3F9E9 /* NIOFoundationCompat */; };
-		F11341CC27EAB9FC00E3F9E9 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = F11341CB27EAB9FC00E3F9E9 /* NIOHTTP1 */; };
-		F11341CE27EAB9FC00E3F9E9 /* NIOPosix in Frameworks */ = {isa = PBXBuildFile; productRef = F11341CD27EAB9FC00E3F9E9 /* NIOPosix */; };
-		F11341D027EAB9FC00E3F9E9 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = F11341CF27EAB9FC00E3F9E9 /* NIOTLS */; };
-		F11341D227EAB9FC00E3F9E9 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F11341D127EAB9FC00E3F9E9 /* NIOTestUtils */; };
-		F11341D427EAB9FC00E3F9E9 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F11341D327EAB9FC00E3F9E9 /* NIOWebSocket */; };
-		F11341D627EAB9FC00E3F9E9 /* _NIOConcurrency in Frameworks */ = {isa = PBXBuildFile; productRef = F11341D527EAB9FC00E3F9E9 /* _NIOConcurrency */; };
-		F11341DB27EABA3C00E3F9E9 /* TCPClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11341DA27EABA3C00E3F9E9 /* TCPClientHandler.swift */; };
-		F11341DD27EAC20F00E3F9E9 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11341DC27EAC20F00E3F9E9 /* TCPClient.swift */; };
-		F11341E027EAC6FC00E3F9E9 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11341DC27EAC20F00E3F9E9 /* TCPClient.swift */; };
-		F11341E227EAC6FC00E3F9E9 /* TCPClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11341DA27EABA3C00E3F9E9 /* TCPClientHandler.swift */; };
-		F11341E527EAC7BA00E3F9E9 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = F11341E427EAC7BA00E3F9E9 /* NIO */; };
+		F10C250027F1981B00E33692 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C24FF27F1981B00E33692 /* Client.swift */; };
+		F10C250127F1981B00E33692 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C24FF27F1981B00E33692 /* Client.swift */; };
+		F10C250827F19FDA00E33692 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C250727F19FDA00E33692 /* Store.swift */; };
+		F10C250927F19FDA00E33692 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C250727F19FDA00E33692 /* Store.swift */; };
+		F10C250B27F19FFE00E33692 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C250A27F19FFE00E33692 /* AppState.swift */; };
+		F10C250C27F19FFE00E33692 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C250A27F19FFE00E33692 /* AppState.swift */; };
 		F158F39D27E8AAB900AA4404 /* GPUWindowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158F38D27E8AAB400AA4404 /* GPUWindowApp.swift */; };
 		F158F39E27E8AAB900AA4404 /* GPUWindowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158F38D27E8AAB400AA4404 /* GPUWindowApp.swift */; };
 		F158F39F27E8AAB900AA4404 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158F38E27E8AAB400AA4404 /* ContentView.swift */; };
 		F158F3A027E8AAB900AA4404 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158F38E27E8AAB400AA4404 /* ContentView.swift */; };
 		F158F3A127E8AAB900AA4404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F158F38F27E8AAB900AA4404 /* Assets.xcassets */; };
 		F158F3A227E8AAB900AA4404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F158F38F27E8AAB900AA4404 /* Assets.xcassets */; };
-		F1C62CCE27EAC8850005CAB5 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CCD27EAC8850005CAB5 /* NIO */; };
-		F1C62CD027EAC8850005CAB5 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CCF27EAC8850005CAB5 /* NIOConcurrencyHelpers */; };
-		F1C62CD227EAC8850005CAB5 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CD127EAC8850005CAB5 /* NIOCore */; };
-		F1C62CD427EAC8850005CAB5 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CD327EAC8850005CAB5 /* NIOEmbedded */; };
-		F1C62CD627EAC8850005CAB5 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CD527EAC8850005CAB5 /* NIOFoundationCompat */; };
-		F1C62CD827EAC8850005CAB5 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CD727EAC8850005CAB5 /* NIOHTTP1 */; };
-		F1C62CDA27EAC8850005CAB5 /* NIOPosix in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CD927EAC8850005CAB5 /* NIOPosix */; };
-		F1C62CDC27EAC8850005CAB5 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CDB27EAC8850005CAB5 /* NIOTLS */; };
-		F1C62CDE27EAC8850005CAB5 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CDD27EAC8850005CAB5 /* NIOTestUtils */; };
-		F1C62CE027EAC8850005CAB5 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CDF27EAC8850005CAB5 /* NIOWebSocket */; };
-		F1C62CE227EAC8850005CAB5 /* _NIOConcurrency in Frameworks */ = {isa = PBXBuildFile; productRef = F1C62CE127EAC8850005CAB5 /* _NIOConcurrency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F11341DA27EABA3C00E3F9E9 /* TCPClientHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPClientHandler.swift; sourceTree = "<group>"; };
-		F11341DC27EAC20F00E3F9E9 /* TCPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPClient.swift; sourceTree = "<group>"; };
+		F10C24FF27F1981B00E33692 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		F10C250727F19FDA00E33692 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F10C250A27F19FFE00E33692 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		F158F38D27E8AAB400AA4404 /* GPUWindowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUWindowApp.swift; sourceTree = "<group>"; };
 		F158F38E27E8AAB400AA4404 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F158F38F27E8AAB900AA4404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,29 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C62CCE27EAC8850005CAB5 /* NIO in Frameworks */,
-				F11341C627EAB9FC00E3F9E9 /* NIOCore in Frameworks */,
-				F11341CA27EAB9FC00E3F9E9 /* NIOFoundationCompat in Frameworks */,
-				F1C62CD627EAC8850005CAB5 /* NIOFoundationCompat in Frameworks */,
-				F11341D627EAB9FC00E3F9E9 /* _NIOConcurrency in Frameworks */,
-				F1C62CDE27EAC8850005CAB5 /* NIOTestUtils in Frameworks */,
-				F11341D227EAB9FC00E3F9E9 /* NIOTestUtils in Frameworks */,
-				F11341CE27EAB9FC00E3F9E9 /* NIOPosix in Frameworks */,
-				F11341C227EAB9FC00E3F9E9 /* NIO in Frameworks */,
-				F1C62CE027EAC8850005CAB5 /* NIOWebSocket in Frameworks */,
-				F11341D427EAB9FC00E3F9E9 /* NIOWebSocket in Frameworks */,
-				F11341CC27EAB9FC00E3F9E9 /* NIOHTTP1 in Frameworks */,
-				F1C62CD227EAC8850005CAB5 /* NIOCore in Frameworks */,
-				F1C62CDA27EAC8850005CAB5 /* NIOPosix in Frameworks */,
-				F11341C427EAB9FC00E3F9E9 /* NIOConcurrencyHelpers in Frameworks */,
-				F1C62CD427EAC8850005CAB5 /* NIOEmbedded in Frameworks */,
-				F11341E527EAC7BA00E3F9E9 /* NIO in Frameworks */,
-				F1C62CDC27EAC8850005CAB5 /* NIOTLS in Frameworks */,
-				F1C62CD027EAC8850005CAB5 /* NIOConcurrencyHelpers in Frameworks */,
-				F1C62CD827EAC8850005CAB5 /* NIOHTTP1 in Frameworks */,
-				F1C62CE227EAC8850005CAB5 /* _NIOConcurrency in Frameworks */,
-				F11341C827EAB9FC00E3F9E9 /* NIOEmbedded in Frameworks */,
-				F11341D027EAB9FC00E3F9E9 /* NIOTLS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,13 +51,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F11341D727EABA0B00E3F9E9 /* utils */ = {
+		F10C250527F19FC100E33692 /* Dataflow */ = {
 			isa = PBXGroup;
 			children = (
-				F11341DA27EABA3C00E3F9E9 /* TCPClientHandler.swift */,
-				F11341DC27EAC20F00E3F9E9 /* TCPClient.swift */,
+				F10C250727F19FDA00E33692 /* Store.swift */,
+				F10C250A27F19FFE00E33692 /* AppState.swift */,
+				F10C250627F19FCA00E33692 /* Network */,
 			);
-			path = utils;
+			path = Dataflow;
+			sourceTree = "<group>";
+		};
+		F10C250627F19FCA00E33692 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F10C24FF27F1981B00E33692 /* Client.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		F158F38727E8AAB300AA4404 = {
@@ -115,7 +81,7 @@
 		F158F38C27E8AAB400AA4404 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F11341D727EABA0B00E3F9E9 /* utils */,
+				F10C250527F19FC100E33692 /* Dataflow */,
 				F158F38D27E8AAB400AA4404 /* GPUWindowApp.swift */,
 				F158F38E27E8AAB400AA4404 /* ContentView.swift */,
 				F158F38F27E8AAB900AA4404 /* Assets.xcassets */,
@@ -157,29 +123,6 @@
 			);
 			name = "GPUWindow (iOS)";
 			packageProductDependencies = (
-				F11341C127EAB9FC00E3F9E9 /* NIO */,
-				F11341C327EAB9FC00E3F9E9 /* NIOConcurrencyHelpers */,
-				F11341C527EAB9FC00E3F9E9 /* NIOCore */,
-				F11341C727EAB9FC00E3F9E9 /* NIOEmbedded */,
-				F11341C927EAB9FC00E3F9E9 /* NIOFoundationCompat */,
-				F11341CB27EAB9FC00E3F9E9 /* NIOHTTP1 */,
-				F11341CD27EAB9FC00E3F9E9 /* NIOPosix */,
-				F11341CF27EAB9FC00E3F9E9 /* NIOTLS */,
-				F11341D127EAB9FC00E3F9E9 /* NIOTestUtils */,
-				F11341D327EAB9FC00E3F9E9 /* NIOWebSocket */,
-				F11341D527EAB9FC00E3F9E9 /* _NIOConcurrency */,
-				F11341E427EAC7BA00E3F9E9 /* NIO */,
-				F1C62CCD27EAC8850005CAB5 /* NIO */,
-				F1C62CCF27EAC8850005CAB5 /* NIOConcurrencyHelpers */,
-				F1C62CD127EAC8850005CAB5 /* NIOCore */,
-				F1C62CD327EAC8850005CAB5 /* NIOEmbedded */,
-				F1C62CD527EAC8850005CAB5 /* NIOFoundationCompat */,
-				F1C62CD727EAC8850005CAB5 /* NIOHTTP1 */,
-				F1C62CD927EAC8850005CAB5 /* NIOPosix */,
-				F1C62CDB27EAC8850005CAB5 /* NIOTLS */,
-				F1C62CDD27EAC8850005CAB5 /* NIOTestUtils */,
-				F1C62CDF27EAC8850005CAB5 /* NIOWebSocket */,
-				F1C62CE127EAC8850005CAB5 /* _NIOConcurrency */,
 			);
 			productName = "GPUWindow (iOS)";
 			productReference = F158F39427E8AAB900AA4404 /* GPUWindow.app */;
@@ -231,7 +174,6 @@
 			);
 			mainGroup = F158F38727E8AAB300AA4404;
 			packageReferences = (
-				F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */,
 			);
 			productRefGroup = F158F39527E8AAB900AA4404 /* Products */;
 			projectDirPath = "";
@@ -267,10 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11341DD27EAC20F00E3F9E9 /* TCPClient.swift in Sources */,
+				F10C250827F19FDA00E33692 /* Store.swift in Sources */,
 				F158F39F27E8AAB900AA4404 /* ContentView.swift in Sources */,
+				F10C250B27F19FFE00E33692 /* AppState.swift in Sources */,
 				F158F39D27E8AAB900AA4404 /* GPUWindowApp.swift in Sources */,
-				F11341DB27EABA3C00E3F9E9 /* TCPClientHandler.swift in Sources */,
+				F10C250027F1981B00E33692 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10C250927F19FDA00E33692 /* Store.swift in Sources */,
 				F158F3A027E8AAB900AA4404 /* ContentView.swift in Sources */,
+				F10C250C27F19FFE00E33692 /* AppState.swift in Sources */,
 				F158F39E27E8AAB900AA4404 /* GPUWindowApp.swift in Sources */,
-				F11341E027EAC6FC00E3F9E9 /* TCPClient.swift in Sources */,
-				F11341E227EAC6FC00E3F9E9 /* TCPClientHandler.swift in Sources */,
+				F10C250127F1981B00E33692 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,121 +509,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F11341C127EAB9FC00E3F9E9 /* NIO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIO;
-		};
-		F11341C327EAB9FC00E3F9E9 /* NIOConcurrencyHelpers */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOConcurrencyHelpers;
-		};
-		F11341C527EAB9FC00E3F9E9 /* NIOCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOCore;
-		};
-		F11341C727EAB9FC00E3F9E9 /* NIOEmbedded */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOEmbedded;
-		};
-		F11341C927EAB9FC00E3F9E9 /* NIOFoundationCompat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOFoundationCompat;
-		};
-		F11341CB27EAB9FC00E3F9E9 /* NIOHTTP1 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOHTTP1;
-		};
-		F11341CD27EAB9FC00E3F9E9 /* NIOPosix */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOPosix;
-		};
-		F11341CF27EAB9FC00E3F9E9 /* NIOTLS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTLS;
-		};
-		F11341D127EAB9FC00E3F9E9 /* NIOTestUtils */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTestUtils;
-		};
-		F11341D327EAB9FC00E3F9E9 /* NIOWebSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOWebSocket;
-		};
-		F11341D527EAB9FC00E3F9E9 /* _NIOConcurrency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = _NIOConcurrency;
-		};
-		F11341E427EAC7BA00E3F9E9 /* NIO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIO;
-		};
-		F1C62CCD27EAC8850005CAB5 /* NIO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIO;
-		};
-		F1C62CCF27EAC8850005CAB5 /* NIOConcurrencyHelpers */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOConcurrencyHelpers;
-		};
-		F1C62CD127EAC8850005CAB5 /* NIOCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOCore;
-		};
-		F1C62CD327EAC8850005CAB5 /* NIOEmbedded */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOEmbedded;
-		};
-		F1C62CD527EAC8850005CAB5 /* NIOFoundationCompat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOFoundationCompat;
-		};
-		F1C62CD727EAC8850005CAB5 /* NIOHTTP1 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOHTTP1;
-		};
-		F1C62CD927EAC8850005CAB5 /* NIOPosix */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOPosix;
-		};
-		F1C62CDB27EAC8850005CAB5 /* NIOTLS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTLS;
-		};
-		F1C62CDD27EAC8850005CAB5 /* NIOTestUtils */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTestUtils;
-		};
-		F1C62CDF27EAC8850005CAB5 /* NIOWebSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOWebSocket;
-		};
-		F1C62CE127EAC8850005CAB5 /* _NIOConcurrency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = _NIOConcurrency;
-		};
 		F1C62CE327EAC8B10005CAB5 /* NIO */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F11341C027EAB9FC00E3F9E9 /* XCRemoteSwiftPackageReference "swift-nio" */;
