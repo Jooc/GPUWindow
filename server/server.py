@@ -1,7 +1,7 @@
 import socket
 import threading
 import time
-
+import os
 
 sending = False
 
@@ -13,9 +13,11 @@ def watch_cpu_and_send(sock, addr):
 
     sending = True
     counter = 0
-    while True:
+    for _ in range(20):
         time.sleep(1)
-        sock.send(('Hello, this is the %sth message!' % counter).encode('utf-8'))
+        ss = os.popen(
+            "nvidia-smi --query-gpu=memory.total,memory.used,utilization.memory,utilization.gpu --format=csv,noheader,nounits").read().strip().replace(',', '')
+        sock.send(ss.encode('utf-8'))
         print("message sent...")
         counter += 1
 
@@ -35,7 +37,7 @@ def listen_and_exit(sock, addr, sending_thread):
     print("Connection from %s:%s closed." % addr)
 
 
-address = ('127.0.0.1', 31500)
+address = ('', 31500)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(address)
@@ -43,7 +45,7 @@ s.listen(5)
 
 while True:
     sock, addr = s.accept()
-    t0 = threading.Thread(target=watch_cpu_and_send, args=(sock, addr), daemon=True)
-    t1 = threading.Thread(target=listen_and_exit, args=(sock, addr, t0), daemon=True)
+    t0 = threading.Thread(target=watch_cpu_and_send, args=(sock, addr))
+    t1 = threading.Thread(target=listen_and_exit, args=(sock, addr, t0))
     t0.start()
     t1.start()

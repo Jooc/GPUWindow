@@ -13,6 +13,11 @@ import SwiftUI
 class Client: ObservableObject{
     @Published var words: String = "123123123"
     
+    @Published var memoryTotal = ""
+    @Published var memoryUsed = ""
+    @Published var memoryUtilization = ""
+    @Published var gpuUtilization = ""
+    
     let host: NWEndpoint.Host
     let port: NWEndpoint.Port
     let queue = DispatchQueue(label: "Client connection Q")
@@ -48,21 +53,33 @@ class Client: ObservableObject{
         stop(error: nil)
     }
     
-//    func didStopCallback(error: Error?){
-//        if error == nil{
-//            exit(EXIT_SUCCESS)
-//        }else{
-//            exit(EXIT_FAILURE)
-//        }
-//    }
+    //    func didStopCallback(error: Error?){
+    //        if error == nil{
+    //            exit(EXIT_SUCCESS)
+    //        }else{
+    //            exit(EXIT_FAILURE)
+    //        }
+    //    }
     
     private func setupReceive(){
         nwConnection.receive(minimumIncompleteLength: 1, maximumLength: 65536){(data, _, isComplete, error) in
             if let data = data, !data.isEmpty{
                 let message = String(data: data, encoding: .utf8)
+                print(message)
                 self.words = message ?? ""
+                let letters = message?.split(separator: " ")
+                if letters?.count ?? 0 >= 4{
+                    self.memoryTotal = String(letters![0]) + "MiB"
+                    self.memoryUsed = String(letters![1]) + "MiB"
+                    self.memoryUtilization = String(letters![2]) + "%"
+                    self.gpuUtilization = String(letters![3]) + "%"
+                }
                 print("connection did receive, data: \(data as NSData) string: \(message ?? "-")")
                 print(self.words)
+                print(self.memoryTotal)
+                print(self.memoryUsed)
+                print(self.memoryUtilization)
+                print(self.gpuUtilization)
             }
             if isComplete{
                 self.connectionDidEnd()
@@ -100,10 +117,10 @@ class Client: ObservableObject{
     private func stop(error: Error?){
         self.nwConnection.stateUpdateHandler = nil
         self.nwConnection.cancel()
-//        if let didStopCallback = self.didStopCallback {
-//            self.didStopCallback = nil
-//            didStopCallback(error)
-//        }
+        //        if let didStopCallback = self.didStopCallback {
+        //            self.didStopCallback = nil
+        //            didStopCallback(error)
+        //        }
     }
 }
 
